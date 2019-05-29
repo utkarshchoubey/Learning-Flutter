@@ -49,14 +49,6 @@ class _HomePageState extends State<HomePage> {
               fontSize: 20.0,
               fontStyle: FontStyle.italic
             ),),
-            new RaisedButton(
-              child: new Text("click" , style: new TextStyle(
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontStyle: FontStyle.italic
-              )),
-              onPressed : _changeText,
-            color: Colors.red,)
           ],
         ),
       ),
@@ -70,6 +62,10 @@ class _HomePageState extends State<HomePage> {
         title: new Text("HomePage"),
       ),
       body: _bodyWidget(),
+        floatingActionButton: new FloatingActionButton(
+          child: new Icon(Icons.add),
+          onPressed: _changeText,
+        ),
     );
   }
 }
