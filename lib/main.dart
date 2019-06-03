@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'get_list.dart';
 
 void main()
 {
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      home: new LoginPage(),
+      home: new HomePage(),
       theme: new ThemeData(
         primarySwatch: Colors.blue,
         
@@ -24,7 +25,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMixin{
-
   AnimationController _iconAnimationController;
   Animation<double> _iconAnimation;
 
